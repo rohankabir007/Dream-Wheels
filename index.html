@@ -16,6 +16,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
@@ -27,46 +28,56 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
 </head>
 
-<!-- CONTRIBUTION TEST COMMIT 2-->
-
 <body>
     <!-- Header -->
-    <header class="bg-header bg-cover min-h-screen">
+    <header class="banner-container">
+        <div class="overlay"></div>
+        <img class="slides" src="assets/images/banner-1.png" alt="">
+        <img class="slides" src="assets/images/banner-2.png" alt="">
+        <img class="slides" src="assets/images/banner-3.png" alt="">
         <!-- NAVBAR SECTION -->
         <section class="navigation">
-            <nav class="container-wide flex justify-between py-4">
-                <div class="text-base text-white">
+            <nav class="navbar">
+                <div class="logo">
                     <h1>LOGO</h1>
                 </div>
-                <ul class="flex gap-6 items-center text-base">
+                <ul class="navlinks">
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><button class="btn-secondary"><a href="#submit-listing">Submit listing</a></button></li>
+                    <li><a href="#submit-listing"><button class="nav-btn">Submit Listing</button></a></li>
                 </ul>
+                <div class="menu">
+                    <button onclick="openmenu()" class="menu-open"><i class="fa-solid fa-bars"></i></button>
+                    <ul class="pop-up">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#submit-listing"><button class="nav-btn">Submit Listing</button></a></li>
+                    </ul>
+                </div>
             </nav>
         </section>
-
         <!-- BANNER SECTION -->
-        <section class="relative">
+        <section class="banner-container">
             <div class="container">
-                <div class=" flex flex-col justify-center text-white banner-content">
-                    <p class="text-4xl font-semibold">$35,000</p>
-                    <h1 class="banner-heading text-7xl font-semibold">Mercedes-Benz, C Class</h1>
-                    <div class="flex gap-12 font-medium">
-                        <p class="text-sm">Petrol</p>
+                <div class="banner-content">
+                    <p class="price">$35,000</p>
+                    <h1 class="banner-heading">Mercedes-Benz, C Class</h1>
+                    <div class="feature">
+                        <p>Petrol</p>
                         <p>100 Miles</p>
-                        <p class="text-sm">Automatic</p>
+                        <p>Automatic</p>
                     </div>
                     <div class="mt-12">
-                        <button class="btn-primary btn-banner flex items-center gap-2">Learn More <i
+                        <button class="main-banner-btn">Learn More <i
                                 class="fa-thin fa-arrow-up-right text-2xl"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-between slider-btn absolute">
-                <button class="btn-arrow"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="btn-container slider-btn">
+                <button onclick="prev()" class="btn-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+                <button onclick="next()" class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </section>
     </header>
@@ -74,10 +85,10 @@
     <!-- MAIN SECTON -->
     <main id="main-content">
         <!-- BROWSE BY TYPE -->
-        <section class="py-28 container">
-            <div class="flex justify-between items-center">
+        <section class="section-container">
+            <div class="section-title">
                 <div>
-                    <h2 class="text-4xl font-medium mb-4">Browse by Type</h2>
+                    <h2 class="section-heading">Browse by Type</h2>
                 </div>
                 <div>
                     <button class="view-btn flex items-center gap-2 flex items-center gap-2">View all <i
@@ -85,28 +96,28 @@
                 </div>
             </div>
 
-            <div class="flex justify-between">
-                <div class="category rounded-xl flex flex-col justify-center items-center">
+            <div class="car-type">
+                <div class="category">
                     <div class="type-icon-bg"><img src="assets/icons/suv.png" alt=""></div>
                     <h4 class="font-normal">SUV</h4>
                 </div>
-                <div class="category rounded-xl flex flex-col justify-center items-center">
+                <div class="category">
                     <div class="type-icon-bg"><img src="assets/icons/sedan.png" alt=""></div>
                     <h4 class="font-normal">Sedan</h4>
                 </div>
-                <div class="category rounded-xl flex flex-col justify-center items-center">
+                <div class="category">
                     <div class="type-icon-bg"><img src="assets/icons/hatchback.png" alt=""></div>
                     <h4 class="font-normal">Hatchback</h4>
                 </div>
-                <div class="category rounded-xl flex flex-col justify-center items-center">
+                <div class="category">
                     <div class="type-icon-bg"><img src="assets/icons/coupe.png" alt=""></div>
                     <h4 class="font-normal">Coup</h4>
                 </div>
-                <div class="category rounded-xl flex flex-col justify-center items-center">
+                <div class="category">
                     <div class="type-icon-bg"><img src="assets/icons/hybrid.png" alt=""></div>
                     <h4 class="font-normal">Hybrid</h4>
                 </div>
-                <div class="category rounded-xl flex flex-col justify-center items-center">
+                <div class="category">
                     <div class="type-icon-bg"><img src="assets/icons/convertible.png" alt=""></div>
                     <h4 class="font-normal">Convertible</h4>
                 </div>
@@ -115,10 +126,10 @@
 
         <!-- EXPLORE ALL VEHICLES SECTION -->
         <section class="section-bg">
-            <div class="container py-28">
-                <div class="flex justify-between items-center ">
+            <div class="container">
+                <div class="flex justify-between items-center">
                     <div>
-                        <h2 class="text-4xl font-medium mb-4">Explore All Vehicles</h2>
+                        <h2 class="section-heading">Explore All Vehicles</h2>
                     </div>
                     <div>
                         <button class="view-btn flex items-center gap-2 flex items-center gap-2">View all <i
@@ -420,8 +431,8 @@
         </section>
 
         <!-- HERO SECTION -->
-        <section class="py-28 container">
-            <div class="flex gap-12 justify-between items-center">
+        <section class="section-container">
+            <div class="hero-container">
                 <div class="hero-content">
                     <h3 class="text-4xl font-medium">Onine, in-person,<br>everywhere</h3>
                     <p class="mt-4 font-thin">Chose from thousand of vehicles from multiple brands and buy online with
@@ -470,7 +481,7 @@
         </section>
 
         <!-- SPECIALS SECTION -->
-        <section class="py-28 container">
+        <section class="section-container">
             <div>
                 <h2 class="text-4xl font-medium mb-4">Specials</h2>
                 <div class="my-6 car-gallery">
@@ -629,19 +640,19 @@
         </section>
 
         <!-- TESTIMONIALS SECTION -->
-        <section class="section-bg">
-            <div class="container py-28">
-                <div class="flex justify-between items-center my-6">
+        <section class="testimonial-section-container">
+            <div class="section-container relative">
+                <div class="testimonial-section-title">
                     <div>
-                        <h2 class="text-4xl font-medium mb-4">What Our Customers Say</h2>
+                        <h2 class="section-heading">What Our Customers Say</h2>
                     </div>
                     <div>
                         <p class="font-thin">Rated 4.7/5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
                     </div>
                 </div>
-                <div class="relative">
-                    <div class="car-gallery">
-                        <div class="testimonial">
+                <div class="swiper multicard relative">
+                    <div class="swiper-wrapper testimonial-container">
+                        <div class="swiper-slide testimonial">
                             <div class="flex gap-6 mb-3">
                                 <div>
                                     <img class="rating" src="assets/icons/star.png" alt="">
@@ -656,14 +667,15 @@
                                 </div>
                             </div>
                             <h4 class="font-normal text-base mb-3">Sales process was simple and easy</h4>
-                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br> Maximillion was
+                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br>
+                                Maximillion was
                                 friendly
                                 and
                                 I
                                 didn't feel...</p>
                             <h5 class="font-normal">Ali Tufan</h5>
                         </div>
-                        <div class="testimonial">
+                        <div class="swiper-slide testimonial">
                             <div class="flex gap-6 mb-3">
                                 <div>
                                     <img class="rating" src="assets/icons/star.png" alt="">
@@ -678,14 +690,15 @@
                                 </div>
                             </div>
                             <h4 class="font-normal text-base mb-3">Sales process was simple and easy</h4>
-                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br> Maximillion was
+                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br>
+                                Maximillion was
                                 friendly
                                 and
                                 I
                                 didn't feel...</p>
                             <h5 class="font-normal">John Doe</h5>
                         </div>
-                        <div class="testimonial">
+                        <div class="swiper-slide testimonial">
                             <div class="flex gap-6 mb-3">
                                 <div>
                                     <img class="rating" src="assets/icons/star.png" alt="">
@@ -700,14 +713,15 @@
                                 </div>
                             </div>
                             <h4 class="font-normal text-base mb-3">Sales process was simple and easy</h4>
-                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br> Maximillion was
+                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br>
+                                Maximillion was
                                 friendly
                                 and
                                 I
                                 didn't feel...</p>
                             <h5 class="font-normal">Brooklyn Simmons</h5>
                         </div>
-                        <div class="testimonial">
+                        <div class="swiper-slide testimonial">
                             <div class="flex gap-6 mb-3">
                                 <div>
                                     <img class="rating" src="assets/icons/star.png" alt="">
@@ -722,7 +736,31 @@
                                 </div>
                             </div>
                             <h4 class="font-normal text-base mb-3">Sales process was simple and easy</h4>
-                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br> Maximillion was
+                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br>
+                                Maximillion was
+                                friendly
+                                and
+                                I
+                                didn't feel...</p>
+                            <h5 class="font-normal">Augusta Silva</h5>
+                        </div>
+                        <div class="swiper-slide testimonial">
+                            <div class="flex gap-6 mb-3">
+                                <div>
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                </div>
+                                <div class="verified">
+                                    <img class="rating" src="assets/icons/verified.png" alt="">
+                                    <p class="font-thin">Verified</p>
+                                </div>
+                            </div>
+                            <h4 class="font-normal text-base mb-3">Sales process was simple and easy</h4>
+                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br>
+                                Maximillion was
                                 friendly
                                 and
                                 I
@@ -730,17 +768,137 @@
                             <h5 class="font-normal">Augusta Silva</h5>
                         </div>
                     </div>
-                    <div class="flex justify-between testimonial-btn absolute">
-                        <button class="btn-arrow border btn-sm"><i class="fa-solid fa-chevron-left"></i></button>
-                        <button class="btn-arrow border btn-sm"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="swiper2 singlecard relative">
+                    <div class="swiper-wrapper testimonial-container">
+                        <div class="swiper-slide testimonial">
+                            <div class="flex gap-6 mb-3">
+                                <div>
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                </div>
+                                <div class="verified">
+                                    <img class="rating" src="assets/icons/verified.png" alt="">
+                                    <p class="font-thin">Verified</p>
+                                </div>
+                            </div>
+                            <h4 class="font-normal text-base mb-3">Sales process was simple and easy</h4>
+                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br>
+                                Maximillion was
+                                friendly
+                                and
+                                I
+                                didn't feel...</p>
+                            <h5 class="font-normal">Ali Tufan</h5>
+                        </div>
+                        <div class="swiper-slide testimonial">
+                            <div class="flex gap-6 mb-3">
+                                <div>
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star-2.png" alt="">
+                                </div>
+                                <div class="verified">
+                                    <img class="rating" src="assets/icons/verified.png" alt="">
+                                    <p class="font-thin">Verified</p>
+                                </div>
+                            </div>
+                            <h4 class="font-normal text-base mb-3">Sales process was simple and easy</h4>
+                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br>
+                                Maximillion was
+                                friendly
+                                and
+                                I
+                                didn't feel...</p>
+                            <h5 class="font-normal">John Doe</h5>
+                        </div>
+                        <div class="swiper-slide testimonial">
+                            <div class="flex gap-6 mb-3">
+                                <div>
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star-2.png" alt="">
+                                    <img class="rating" src="assets/icons/star-2.png" alt="">
+                                    <img class="rating" src="assets/icons/star-2.png" alt="">
+                                </div>
+                                <div class="verified">
+                                    <img class="rating" src="assets/icons/verified.png" alt="">
+                                    <p class="font-thin">Verified</p>
+                                </div>
+                            </div>
+                            <h4 class="font-normal text-base mb-3">Sales process was simple and easy</h4>
+                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br>
+                                Maximillion was
+                                friendly
+                                and
+                                I
+                                didn't feel...</p>
+                            <h5 class="font-normal">Brooklyn Simmons</h5>
+                        </div>
+                        <div class="swiper-slide testimonial">
+                            <div class="flex gap-6 mb-3">
+                                <div>
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                </div>
+                                <div class="verified">
+                                    <img class="rating" src="assets/icons/verified.png" alt="">
+                                    <p class="font-thin">Verified</p>
+                                </div>
+                            </div>
+                            <h4 class="font-normal text-base mb-3">Sales process was simple and easy</h4>
+                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br>
+                                Maximillion was
+                                friendly
+                                and
+                                I
+                                didn't feel...</p>
+                            <h5 class="font-normal">Augusta Silva</h5>
+                        </div>
+                        <div class="swiper-slide testimonial">
+                            <div class="flex gap-6 mb-3">
+                                <div>
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                    <img class="rating" src="assets/icons/star.png" alt="">
+                                </div>
+                                <div class="verified">
+                                    <img class="rating" src="assets/icons/verified.png" alt="">
+                                    <p class="font-thin">Verified</p>
+                                </div>
+                            </div>
+                            <h4 class="font-normal text-base mb-3">Sales process was simple and easy</h4>
+                            <p class="text-sm font-thin mb-3">Sales process was simple and easy. <br>
+                                Maximillion was
+                                friendly
+                                and
+                                I
+                                didn't feel...</p>
+                            <h5 class="font-normal">Augusta Silva</h5>
+                        </div>
                     </div>
+                </div>
+
+                <div class="flex justify-between slider-btn-container absolute">
+                    <button class="btn-arrow border btn-sm prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="btn-arrow border btn-sm next"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </div>
         </section>
 
         <!-- TEAM SECTION -->
-        <section class="container">
-            <div class="py-28">
+        <section class="section-container">
+            <div class="team-container">
                 <div class="flex justify-between items-center ">
                     <div>
                         <h2 class="text-4xl font-medium mb-4">Our Team</h2>
@@ -775,33 +933,33 @@
             </div>
             <div>
                 <div>
-                    <h2 class="text-4xl font-medium mb-4">Need Some Inspiration?</h2>
+                    <h2 class="section-heading">Need Some Inspiration?</h2>
                 </div>
                 <div>
-                    <button class="btn-outline">Automatic Cars</button>
-                    <button class="btn-outline">SUVs</button>
-                    <button class="btn-outline">Electrics Cars</button>
-                    <button class="btn-outline">New in Stock</button>
-                    <button class="btn-outline">Petrol</button>
-                    <button class="btn-outline">Diesel</button>
+                    <button class="btn-outline inspiration-category">Automatic Cars</button>
+                    <button class="btn-outline inspiration-category">SUVs</button>
+                    <button class="btn-outline inspiration-category">Electrics Cars</button>
+                    <button class="btn-outline inspiration-category">New in Stock</button>
+                    <button class="btn-outline inspiration-category">Petrol</button>
+                    <button class="btn-outline inspiration-category">Diesel</button>
                 </div>
             </div>
         </section>
 
         <!-- SECOND BANNER SECTION -->
-        <section class="container-wide py-28">
-            <div class="container-wide py-28 banner-2">
-                <div class="container flex items-center justify-between relative">
+        <section class="app-section-container">
+            <div class="banner-2">
+                <div class="banner-2-content">
                     <div class="hero-content">
-                        <h3 class="text-4xl font-medium">Shop Used Cars, Whether You're <br> On The Lot Or On The
+                        <h3 class="section-heading">Shop Used Cars, Whether You're <br> On The Lot Or On The
                             Go</h3>
-                        <p class="mt-4 text-sm font-thin">Download our app to save cars and create alerts, scan window
+                        <p class="section-details">Download our app to save cars and create alerts, scan window
                             stickers
                             on out lot for more details, <br> and even call dibs on a car by holding ir gor up to 7 days
                         </p>
-                        <div class="flex items-center gap-6">
+                        <div class="store-btn-container">
                             <button class="hero-btn">
-                                <div class="flex gap-6 justify-between items-center">
+                                <div class="store-btn">
                                     <i class="fa-brands fa-apple text-3xl"></i>
                                     <div class="store">
                                         <p class="text-sm font-thin">Download on the</p>
@@ -810,7 +968,7 @@
                                 </div>
                             </button>
                             <button class="hero-btn">
-                                <div class="flex gap-6 justify-between items-center">
+                                <div class="store-btn">
                                     <i class="fa-brands fa-google-play text-3xl"></i>
                                     <div class="store">
                                         <p class="text-sm font-thin">Get it on</p>
@@ -895,7 +1053,7 @@
             <div>
                 <form action="" class="relative">
                     <input class="mail-input" type="email" placeholder="Your email address" name="email" id="">
-                    <input class="btn-email" type="button" value="Sign Up">
+                    <button class="btn-email">Sign Up</button>
                 </form>
             </div>
         </div>
@@ -972,5 +1130,7 @@
         </div>
     </footer>
 </body>
+<script src="scripts/swiper-bundle.min.js"></script>s
+<script src="scripts/script.js"></script>
 
 </html>

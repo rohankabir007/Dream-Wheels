@@ -26,17 +26,27 @@ h6 {
     padding: 0px;
 }
 
+body {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
 /* ====================================== 
-            Basic template CSS
+            Common CSS
 ====================================== */
 /* Layout */
 .container-wide {
-    max-width: 90vw;
+    max-width: 90dvw;
     margin: 0 auto;
 }
 
 .container {
-    max-width: 75vw;
+    max-width: 75dvw;
     margin: 0 auto;
 }
 
@@ -77,11 +87,6 @@ h6 {
     align-items: center;
 }
 
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .pt-4 {
     padding-top: 1rem;
 }
@@ -89,7 +94,6 @@ h6 {
 .py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
-
 }
 
 .py-28 {
@@ -141,18 +145,9 @@ h6 {
     font-size: 2.25rem;
 }
 
-.text-5xl {
-    font-size: 3rem;
-}
-
-.text-6xl {
-    font-size: 3.75rem;
-}
-
 .text-7xl {
     font-size: 4.5rem;
 }
-
 
 .text-white {
     color: #ffffff;
@@ -170,14 +165,6 @@ h6 {
     font-weight: 500;
 }
 
-.font-semibold {
-    font-weight: 600;
-}
-
-.font-bold {
-    font-weight: 700;
-}
-
 /* display */
 
 .min-h-screen {
@@ -190,6 +177,7 @@ h6 {
     background-repeat: no-repeat;
 }
 
+/* miscellaneous */
 .btn-arrow {
     background-color: #ffffff;
     color: #000000;
@@ -213,7 +201,9 @@ h6 {
     background-color: transparent;
 }
 
-/* position */
+button:active {
+    transform: scale(0.95);
+}
 
 .relative {
     position: relative;
@@ -223,32 +213,43 @@ h6 {
     position: absolute;
 }
 
-/* Font */
-body {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
+.section-heading {
+    font-size: 36px;
+    font-weight: 500;
 }
 
+.section-container {
+    max-width: 75dvw;
+    margin: 0 auto;
+    padding: 112px 0px;
+}
 
 /* ====================================== 
                 CUSTOM CSS
 ====================================== */
 /* HEADER SECTION */
 
-.bg-header {
-    background-image: url('../assets/images/banner-1.png');
-    background-color: #00000050;
-    background-blend-mode: overlay;
-}
-
 /* NAVBAR */
 header .navigation {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #aeaeae;
+    border-bottom: 1px solid #eeefef52;
+    position: relative;
+    z-index: 20;
 }
 
-nav ul {
+.navigation .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95dvw;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.menu {
+    display: none;
+}
+
+.navigation .navbar ul li {
     list-style: none;
 }
 
@@ -257,18 +258,82 @@ nav ul li a {
     color: #ffffff;
 }
 
+.logo {
+    color: white;
+    font-size: 22px;
+}
+
+.logo h1 {
+    font-weight: 400;
+}
+
+.navlinks {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: 1px solid white;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: white;
+}
+
 /* banner */
+.banner-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+.slides {
+    width: 100dvw;
+    height: 100dvh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -10;
+    transition: 1s;
+}
+
 .feature {
-    padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    padding: 0.25rem;
 }
 
 .banner-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
     height: 90vh;
+    color: white;
+}
+
+.price {
+    font-size: 38px;
+    font-weight: 400;
 }
 
 .banner-heading {
     margin: 0rem;
     padding: 1rem 0rem;
+    font-size: 72px;
+    font-weight: 400;
 }
 
 .btn-banner {
@@ -276,17 +341,48 @@ nav ul li a {
     color: #000000;
 }
 
+.main-banner-btn {
+    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 0.75rem;
+    color: black;
+}
+
+.btn-container {
+    width: 92dvw;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
 .slider-btn {
     top: 45vh;
-    width: 90vw;
     left: 50%;
+    z-index: 10;
     transform: translateX(-50%);
 }
 
 /* Browse by Type Section */
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-type {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    justify-content: space-between;
+}
 
 .type-icon-bg {
     background-color: #FAFBFD;
+    gap: 24px;
     padding: 20px 24px;
     border-radius: 50%;
     margin-bottom: 16px;
@@ -295,6 +391,10 @@ nav ul li a {
 .category {
     height: 200px;
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #EDEDED;
     border-radius: 20px;
 }
@@ -307,6 +407,7 @@ nav ul li a {
 /* Explore all vehicles section */
 .section-bg {
     background-color: #FAFBFD;
+    padding: 112px 0px;
 }
 
 .tab-border {
@@ -351,6 +452,7 @@ nav ul li a {
 .car-gallery {
     display: grid;
     gap: 24px;
+    overflow: hidden;
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
@@ -386,11 +488,18 @@ nav ul li a {
 }
 
 /* hero section */
-.hero-img {
+.section-container .hero-img {
     width: 50%;
     height: 600px;
     border-radius: 24px;
     background-image: url('../assets/images/maserati.png');
+}
+
+.hero-container {
+    display: flex;
+    gap: 48px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-content {
@@ -413,6 +522,21 @@ nav ul li a {
 }
 
 /* what out customers say section */
+.testimonial-section-container {
+    background-color: #FAFBFD;
+}
+
+.testimonial-section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+
+.testimonial-section-container .section-container .singlecard {
+    display: none;
+}
 
 .rating {
     width: 20px;
@@ -428,11 +552,16 @@ nav ul li a {
     gap: 8px;
 }
 
+.testimonial-container {
+    padding: 6px 0px;
+
+}
+
 .testimonial {
     background-color: white;
     padding: 28px;
     border-radius: 16px;
-    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .mb-3 {
@@ -450,7 +579,19 @@ nav ul li a {
     padding: 8px 16px;
 }
 
+.slider-btn-container {
+    top: 55%;
+    width: 82dvw;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
 /* team section */
+.team-container {
+    margin-bottom: 112px;
+}
 
 .team {
     width: 100%;
@@ -468,13 +609,38 @@ nav ul li a {
     padding: 16px 24px;
     border-radius: 12px;
     background: transparent;
-    margin-right: 24px;
+    margin: 36px 24px 0px 0px;
 }
 
 /* second banner section */
+.app-section-container {
+    max-width: 95dvw;
+    margin: 0 auto;
+    margin-bottom: 112px;
+}
+
 .banner-2 {
+    max-width: 90dvw;
+    margin: 0 auto;
+    padding: 112px 0;
     background-color: #EEF0FC;
     border-radius: 16px;
+    min-height: 50dvh;
+}
+
+.banner-2-content {
+    max-width: 75dvw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content .section-details {
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 200;
 }
 
 .fa-brands {
@@ -488,8 +654,21 @@ nav ul li a {
 
 .mockup {
     width: 316px;
-    bottom: -111px;
+    bottom: -123px;
     right: 0px;
+}
+
+.store-btn-container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.store-btn {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* premium brands section*/
@@ -535,7 +714,7 @@ nav ul li a {
 /* footer section */
 .mail-input {
     padding: 24px;
-    width: 25vw;
+    width: 25dvw;
     border: 2px solid #EEEFEF;
     border-radius: 16px;
 }
@@ -575,4 +754,173 @@ nav ul li a {
     padding: 38px 0px;
     border-top: 2px solid #EEEFEF;
     font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    html {
+        margin: 0;
+    }
+
+    body {
+        margin: 0 auto;
+    }
+
+    .section-heading {
+        font-size: 24px;
+    }
+
+    .section-container {
+        padding: 38px 0px;
+        max-width: 92dvw;
+    }
+
+    /* navbar */
+
+    .logo h1 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .navigation .navbar {
+        padding: 8px;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .menu {
+        display: inline;
+        position: relative;
+    }
+
+    .menu-open {
+        color: white;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+    }
+
+    .nav-btn {
+        margin-top: 12px;
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+    .menu .pop-up {
+        position: absolute;
+        width: 35dvw;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid white;
+        background: #eeefef1a;
+        backdrop-filter: blur(10px);
+        display: none;
+    }
+
+    .pop-up.show {
+        display: block;
+    }
+
+    /* banner section */
+    .container {
+        max-width: 92dvw;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .banner-heading {
+        font-size: 32px;
+    }
+
+    .btn-container {
+        display: inline;
+    }
+
+    .slider-btn {
+        top: 80vh;
+    }
+
+    /* Type section */
+    .category {
+        height: 180px;
+        width: 180px;
+    }
+
+    .car-type {
+        display: grid;
+        margin-top: 24px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Vehicles section */
+    .section-bg {
+        padding: 38px 0px;
+    }
+
+    .car-gallery {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    /* hero section */
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .section-container .hero-img {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* testimonial section */
+    .testimonial-section-container .section-container .multicard {
+        display: none;
+    }
+
+    .testimonial-section-container .section-container .singlecard {
+        display: block;
+        overflow: hidden;
+        margin: 12px auto;
+        width: 100%;
+    }
+
+    .testimonial-section-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slider-btn-container {
+        display: none;
+    }
+
+    /* team section */
+    .team-container {
+        margin-bottom: 38px;
+    }
+
+    /* inspiration section */
+    .inspiration-category {
+        margin: 4px;
+    }
 }
