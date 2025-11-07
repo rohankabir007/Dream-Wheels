@@ -25,16 +25,13 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
-
-    <!-- External Fonts -->
-    <link href="https://fonts.cdnfonts.com/css/br-hendrix" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header -->
     <header class="bg-header bg-cover min-h-screen">
         <section class="navigation">
-            <nav class="container flex justify-between">
+            <nav class="container-wide flex justify-between py-4">
                 <div class="text-base text-white">
                     <h1>LOGO</h1>
                 </div>
@@ -46,20 +43,22 @@
                 </ul>
             </nav>
         </section>
-        <section class="flex flex-col justify-center banner-content">
-            <div class="text-white ">
-                <p class="text-4xl">$35,000</p>
-                <h1 class="banner-heading text-7xl font-medium">Mercedes-Benz, C Class</h1>
-                <div class="flex gap-12 font-medium">
-                    <p>Petrol</p>
-                    <p>100 Miles</p>
-                    <p>Automatic</p>
-                </div>
-                <div class="mt-4">
-                    <button class="btn btn-banner">Learn More <i class="fa-thin fa-arrow-up-right"></i></button>
+        <section class="relative">
+            <div class="container">
+                <div class=" flex flex-col justify-center text-white banner-content">
+                    <p class="text-4xl font-semibold">$35,000</p>
+                    <h1 class="banner-heading text-7xl font-semibold">Mercedes-Benz, C Class</h1>
+                    <div class="flex gap-12 font-medium">
+                        <p>Petrol</p>
+                        <p>100 Miles</p>
+                        <p>Automatic</p>
+                    </div>
+                    <div class="mt-12">
+                        <button class="btn btn-banner">Learn More <i class="fa-thin fa-arrow-up-right"></i></button>
+                    </div>
                 </div>
             </div>
-            <div class="flex justify-between slider-btn">
+            <div class="flex justify-between slider-btn absolute">
                 <button class="btn"><i class="fa-solid fa-chevron-left"></i></button>
                 <button class="btn"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
@@ -68,12 +67,364 @@
 
     <!-- Main content area -->
     <main id="main-content">
+        <section class="py-28 container">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-5xl font-medium mb-4">Browse by Type</h2>
+                </div>
+                <div>
+                    <button class="view-btn">View all <i class="fa-thin fa-arrow-up-right"></i></button>
+                </div>
+            </div>
 
+            <div class="flex justify-between">
+                <div class="category rounded-xl flex flex-col justify-center items-center">
+                    <div class="type-icon-bg"><img src="assets/icons/suv.png" alt=""></div>
+                    <h4 class="font-normal">SUV</h4>
+                </div>
+                <div class="category rounded-xl flex flex-col justify-center items-center">
+                    <div class="type-icon-bg"><img src="assets/icons/sedan.png" alt=""></div>
+                    <h4 class="font-normal">Sedan</h4>
+                </div>
+                <div class="category rounded-xl flex flex-col justify-center items-center">
+                    <div class="type-icon-bg"><img src="assets/icons/hatchback.png" alt=""></div>
+                    <h4 class="font-normal">Hatchback</h4>
+                </div>
+                <div class="category rounded-xl flex flex-col justify-center items-center">
+                    <div class="type-icon-bg"><img src="assets/icons/coupe.png" alt=""></div>
+                    <h4 class="font-normal">Coup</h4>
+                </div>
+                <div class="category rounded-xl flex flex-col justify-center items-center">
+                    <div class="type-icon-bg"><img src="assets/icons/hybrid.png" alt=""></div>
+                    <h4 class="font-normal">Hybrid</h4>
+                </div>
+                <div class="category rounded-xl flex flex-col justify-center items-center">
+                    <div class="type-icon-bg"><img src="assets/icons/convertible.png" alt=""></div>
+                    <h4 class="font-normal">Convertible</h4>
+                </div>
+            </div>
+        </section>
+        <section class="section-bg">
+            <div class="container py-28">
+                <div class="flex justify-between items-center ">
+                    <div>
+                        <h2 class="text-5xl font-medium mb-4">Explore All Vehicles</h2>
+                    </div>
+                    <div>
+                        <button class="view-btn">View all <i class="fa-thin fa-arrow-up-right"></i></button>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 tab-border">
+                    <p class="active-tab py-4">Recent Cars</p>
+                    <p>Featured Cars</p>
+                    <p>Popular Cars</p>
+                </div>
+                <div class="my-6 car-gallery">
+                    <div class="car-card">
+                        <figure class="relative">
+                            <img class="fit" src="assets/card/card-1.jpg" alt="" />
+                            <div class="card-badge flex justify-between">
+                                <button class="badge">Great Price</button>
+                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                        </figure>
+                        <div class="card-body p-6">
+                            <h2 class="font-normal text-xl">Toyota Camry New</h2>
+                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                            <div class="card-actions flex justify-between py-4 font-thin">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                    <p>20 Miles</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                    <p>Petrol</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <h2 class="font-medium">$40,000</h2>
+                                </div>
+                                <div>
+                                    <button class="view-btn details-btn">View Details <i
+                                            class="fa-thin fa-arrow-up-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card">
+                        <figure class="relative">
+                            <img class="fit" src="assets/card/card-2.jpg" alt="" />
+                            <div class="card-badge flex justify-end">
+                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                        </figure>
+                        <div class="card-body p-6">
+                            <h2 class="font-normal text-xl">Toyota Camry New</h2>
+                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                            <div class="card-actions flex justify-between py-4 font-thin">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                    <p>20 Miles</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                    <p>Petrol</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <h2 class="font-medium">$40,000</h2>
+                                </div>
+                                <div>
+                                    <button class="view-btn details-btn">View Details <i
+                                            class="fa-thin fa-arrow-up-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card">
+                        <figure class="relative">
+                            <img class="fit" src="assets/card/card-3.jpg" alt="" />
+                            <div class="card-badge flex justify-end">
+                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                        </figure>
+                        <div class="card-body p-6">
+                            <h2 class="font-normal text-xl">Toyota Camry New</h2>
+                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                            <div class="card-actions flex justify-between py-4 font-thin">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                    <p>20 Miles</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                    <p>Petrol</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <h2 class="font-medium">$40,000</h2>
+                                </div>
+                                <div>
+                                    <button class="view-btn details-btn">View Details <i
+                                            class="fa-thin fa-arrow-up-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card">
+                        <figure class="relative">
+                            <img class="fit" src="assets/card/card-4.jpg" alt="" />
+                            <div class="card-badge flex justify-between">
+                                <button class="badge">Great Price</button>
+                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                        </figure>
+                        <div class="card-body p-6">
+                            <h2 class="font-normal text-xl">Toyota Camry New</h2>
+                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                            <div class="card-actions flex justify-between py-4 font-thin">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                    <p>20 Miles</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                    <p>Petrol</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <h2 class="font-medium">$40,000</h2>
+                                </div>
+                                <div>
+                                    <button class="view-btn details-btn">View Details <i
+                                            class="fa-thin fa-arrow-up-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card">
+                        <figure class="relative">
+                            <img class="fit" src="assets/card/card-5.jpeg" alt="" />
+                            <div class="card-badge flex justify-between">
+                                <button class="badge-blue">Low Milage</button>
+                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                        </figure>
+                        <div class="card-body p-6">
+                            <h2 class="font-normal text-xl">Toyota Camry New</h2>
+                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                            <div class="card-actions flex justify-between py-4 font-thin">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                    <p>20 Miles</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                    <p>Petrol</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <h2 class="font-medium">$40,000</h2>
+                                </div>
+                                <div>
+                                    <button class="view-btn details-btn">View Details <i
+                                            class="fa-thin fa-arrow-up-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card">
+                        <figure class="relative">
+                            <img class="fit" src="assets/card/card-6.jpg" alt="" />
+                            <div class="card-badge flex justify-end">
+                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                        </figure>
+                        <div class="card-body p-6">
+                            <h2 class="font-normal text-xl">Toyota Camry New</h2>
+                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                            <div class="card-actions flex justify-between py-4 font-thin">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                    <p>20 Miles</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                    <p>Petrol</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <h2 class="font-medium">$40,000</h2>
+                                </div>
+                                <div>
+                                    <button class="view-btn details-btn">View Details <i
+                                            class="fa-thin fa-arrow-up-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card">
+                        <figure class="relative">
+                            <img class="fit" src="assets/card/card-7.jpg" alt="" />
+                            <div class="card-badge flex justify-end">
+                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                        </figure>
+                        <div class="card-body p-6">
+                            <h2 class="font-normal text-xl">Toyota Camry New</h2>
+                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                            <div class="card-actions flex justify-between py-4 font-thin">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                    <p>20 Miles</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                    <p>Petrol</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <h2 class="font-medium">$40,000</h2>
+                                </div>
+                                <div>
+                                    <button class="view-btn details-btn">View Details <i
+                                            class="fa-thin fa-arrow-up-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card">
+                        <figure class="relative">
+                            <img class="fit" src="assets/card/card-8.jpg" alt="" />
+                            <div class="card-badge flex justify-between">
+                                <button class="badge">Great Price</button>
+                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                            </div>
+                        </figure>
+                        <div class="card-body p-6">
+                            <h2 class="font-normal text-xl">Toyota Camry New</h2>
+                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                            <div class="card-actions flex justify-between py-4 font-thin">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                    <p>20 Miles</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                    <p>Petrol</p>
+                                </div>
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                    <p>Automatic</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <h2 class="font-medium">$40,000</h2>
+                                </div>
+                                <div>
+                                    <button class="view-btn details-btn">View Details <i
+                                            class="fa-thin fa-arrow-up-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-28 container">
+            <div class="flex gap-12 justify-between items-center">
+                <div class="hero-content">
+                    <h3 class="text-5xl font-medium">Onine, in-person,<br>everywhere</h3>
+                    <p class="mt-4 font-thin">Chose from thousand of vehicles from multiple brands and buy online with
+                        click &
+                        Drive, or visit
+                        us
+                        at one of our dealerships today.</p>
+                    <button class="hero-btn">Get Started <i class="fa-thin fa-arrow-up-right"></i></button>
+                </div>
+                <div class="hero-img bg-cover"></div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
 </body>
 
