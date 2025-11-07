@@ -371,6 +371,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 .car-type {
@@ -389,11 +390,11 @@ nav ul li a {
 }
 
 .category {
-    height: 200px;
-    width: 200px;
+    width: 20lvw;
+    padding: 36px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid #EDEDED;
     border-radius: 20px;
@@ -436,7 +437,7 @@ nav ul li a {
 
 .fit {
     width: 100%;
-    height: 180px;
+    height: 22dvh;
     object-fit: cover;
 }
 
@@ -612,11 +613,10 @@ nav ul li a {
     margin: 36px 24px 0px 0px;
 }
 
-/* second banner section */
+/* app section section */
 .app-section-container {
     max-width: 95dvw;
     margin: 0 auto;
-    margin-bottom: 112px;
 }
 
 .banner-2 {
@@ -626,6 +626,7 @@ nav ul li a {
     background-color: #EEF0FC;
     border-radius: 16px;
     min-height: 50dvh;
+    position: relative;
 }
 
 .banner-2-content {
@@ -634,7 +635,6 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .hero-content .section-details {
@@ -643,9 +643,8 @@ nav ul li a {
     font-weight: 200;
 }
 
-.fa-brands {
+.store-btn-container .fa-brands {
     border-right: 1px solid white;
-    padding-right: 24px;
 }
 
 .store {
@@ -654,8 +653,8 @@ nav ul li a {
 
 .mockup {
     width: 316px;
-    bottom: -123px;
-    right: 0px;
+    right: 7dvw;
+    bottom: 0;
 }
 
 .store-btn-container {
@@ -665,29 +664,51 @@ nav ul li a {
 }
 
 .store-btn {
+    padding: 16px 24px;
+    border: none;
+    color: white;
+    background-color: #000000;
+    margin-top: 24px;
+    border-radius: 12px;
+}
+
+.store-btn-content {
     display: flex;
     gap: 24px;
     justify-content: space-between;
     align-items: center;
 }
 
+.fa-apple {
+    font-size: 30px;
+    padding-right: 22px;
+}
+
+.fa-google-play {
+    font-size: 28px;
+    padding-right: 18px;
+}
+
 /* premium brands section*/
+.brand {
+    font-size: 18px;
+    font-weight: 300;
+}
+
 .brand-logo {
-    width: 150px;
-    height: auto;
-    padding: 24px;
+    width: 6lvw;
+    margin: 0 auto;
 }
 
 .logo-container {
-    width: 150px;
-    height: 150px;
+    width: 10lvw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* call to action section */
-
-.cta-section {
-    padding-top: 7rem;
-}
 
 .call-to-action {
     height: 65vh;
@@ -700,6 +721,10 @@ nav ul li a {
 }
 
 .cta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
     padding: 18px 84px;
     border: 2px solid #EEEFEF;
     border-radius: 12px;
@@ -707,6 +732,8 @@ nav ul li a {
 }
 
 .cta-content {
+    display: flex;
+    align-items: center;
     color: white;
     height: 100%;
 }
@@ -731,12 +758,21 @@ nav ul li a {
 }
 
 .newsletter {
+    max-width: 75dvw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 64px 0px;
     border-bottom: 2px solid #EEEFEF;
 }
 
 .footer-links {
+    max-width: 75dvw;
+    margin: 0 auto;
     padding: 48px 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-links li {
@@ -750,10 +786,23 @@ nav ul li a {
     background-color: transparent;
 }
 
+.socials {
+    display: flex;
+    gap: 24px;
+    font-size: 18px;
+}
+
 .copyright {
-    padding: 38px 0px;
+    padding: 38px;
     border-top: 2px solid #EEEFEF;
     font-weight: 200;
+}
+
+.copyright-terms {
+    max-width: 75dvw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -839,7 +888,7 @@ nav ul li a {
 
     /* banner section */
     .container {
-        max-width: 92dvw;
+        max-width: 92svw;
     }
 
     .price {
@@ -855,13 +904,18 @@ nav ul li a {
     }
 
     .slider-btn {
-        top: 80vh;
+        top: 80svh;
+    }
+
+    .slides {
+        width: 100svw;
+        height: 100svh;
     }
 
     /* Type section */
     .category {
-        height: 180px;
-        width: 180px;
+        width: 42svw;
+        padding: 24px 0;
     }
 
     .car-type {
@@ -923,4 +977,63 @@ nav ul li a {
     .inspiration-category {
         margin: 4px;
     }
+
+    /* app section */
+    .banner-2 {
+        padding: 38px 0;
+    }
+
+    /* premium bran section */
+    .brand-logo {
+        width: 20lvw;
+    }
+
+    .store-btn-container {
+        flex-direction: column;
+        margin-top: 24px;
+        gap: 16px;
+    }
+
+    .store-btn-content {
+        justify-content: flex-start;
+    }
+
+    .store-btn {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .mockup {
+        display: none;
+    }
+
+    /* footer section */
+    .newsletter {
+        max-width: 92dvw;
+        padding: 32px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form {
+        margin-top: 24px;
+    }
+
+    .mail-input {
+        width: 92dvw;
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+        gap: 48px;
+        flex-wrap: wrap;
+    }
+
+    .copyright-terms {
+        max-width: 92dvw;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
 }
