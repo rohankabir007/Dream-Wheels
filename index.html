@@ -17,6 +17,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
@@ -96,27 +97,27 @@
             </div>
 
             <div class="car-type">
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="type-icon-bg"><img src="assets/icons/suv.png" alt=""></div>
                     <h4 class="font-normal">SUV</h4>
                 </div>
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="type-icon-bg"><img src="assets/icons/sedan.png" alt=""></div>
                     <h4 class="font-normal">Sedan</h4>
                 </div>
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="type-icon-bg"><img src="assets/icons/hatchback.png" alt=""></div>
                     <h4 class="font-normal">Hatchback</h4>
                 </div>
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="type-icon-bg"><img src="assets/icons/coupe.png" alt=""></div>
                     <h4 class="font-normal">Coup</h4>
                 </div>
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="type-icon-bg"><img src="assets/icons/hybrid.png" alt=""></div>
                     <h4 class="font-normal">Hybrid</h4>
                 </div>
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="type-icon-bg"><img src="assets/icons/convertible.png" alt=""></div>
                     <h4 class="font-normal">Convertible</h4>
                 </div>
@@ -124,7 +125,7 @@
         </section>
 
         <!-- EXPLORE ALL VEHICLES SECTION -->
-        <section class="section-bg">
+        <section class="section-bg" data-aos="zoom-in" data-aos-duration="2000">
             <div class="container">
                 <div class="section-title">
                     <div>
@@ -135,295 +136,629 @@
                     </div>
                 </div>
                 <div class="tabs">
-                    <p class="active-tab">Recent Cars</p>
-                    <p>Featured Cars</p>
-                    <p>Popular Cars</p>
+                    <button class="tab-btn active-tab">Recent Cars</button>
+                    <button class="tab-btn">Featured Cars</button>
+                    <button class="tab-btn">Popular Cars</p>
                 </div>
-                <div class="car-gallery">
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-1.jpg" alt="" />
-                            <div class="card-badge">
-                                <button class="badge">Great Price</button>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                <div class="tab-content active">
+                    <div class="car-gallery">
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-1.jpg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge">Great Price</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body">
+                                <h3>Toyota Camry New</h3>
+                                <p class="card-details">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
                             </div>
-                        </figure>
-                        <div class="card-body">
-                            <h3>Toyota Camry New</h3>
-                            <p class="card-details">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-2.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-3.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-4.jpg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge">Great Price</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-5.jpeg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge-blue">Low Milage</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-6.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-7.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-8.jpg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge">Great Price</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-2.jpg" alt="" />
-                            <div class="card-badge">
-                                <span></span>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+                <div class="tab-content">
+                    <div class="car-gallery">
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-4.jpg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge">Great Price</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
                             </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-5.jpeg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge-blue">Low Milage</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-6.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-7.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-8.jpg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge">Great Price</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-3.jpg" alt="" />
-                            <div class="card-badge">
-                                <span></span>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-                            </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
+                </div>
+                <div class="tab-content">
+                    <div class="car-gallery">
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-1.jpg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge">Great Price</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
+                            </figure>
+                            <div class="card-body">
+                                <h3>Toyota Camry New</h3>
+                                <p class="card-details">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
-                                </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-4.jpg" alt="" />
-                            <div class="card-badge">
-                                <button class="badge">Great Price</button>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-                            </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
-                                </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
-                                </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
-                                </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-5.jpeg" alt="" />
-                            <div class="card-badge">
-                                <button class="badge-blue">Low Milage</button>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-                            </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-2.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
-                                </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-6.jpg" alt="" />
-                            <div class="card-badge">
-                                <span></span>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-                            </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
-                                </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
-                                </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
-                                </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-7.jpg" alt="" />
-                            <div class="card-badge">
-                                <span></span>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-                            </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-3.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
-                                </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-8.jpg" alt="" />
-                            <div class="card-badge">
-                                <button class="badge">Great Price</button>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-                            </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
+                        <div class="car-card">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-4.jpg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge">Great Price</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
-                                </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -435,7 +770,7 @@
         <!-- HERO SECTION -->
         <section class="section-container">
             <div class="hero-container">
-                <div class="hero-content">
+                <div class="hero-content" data-aos="fade-up-right" data-aos-duration="2000">
                     <h3>Onine, in-person,<br>everywhere</h3>
                     <p class="section-details">Chose from thousand of vehicles from multiple brands and buy online with
                         click &
@@ -444,36 +779,36 @@
                         at one of our dealerships today.</p>
                     <button class="hero-btn">Get Started <i class="fa-thin fa-arrow-up-right text-2xl"></i></button>
                 </div>
-                <div class="hero-img"></div>
+                <div class="hero-img" data-aos="fade-up-left" data-aos-duration="2000"></div>
             </div>
         </section>
 
         <!-- WHY CHOSE US SECTION -->
-        <section class="section-container">
+        <section class="container">
             <div>
                 <h2 class="section-heading">Why Chose Us?</h2>
             </div>
-            <div class="car-gallery">
-                <div>
+            <div class="why-us-gallery">
+                <div data-aos="flip-left" data-aos-duration="2000">
                     <img src="assets/icons/finalcial-badge.png" alt="">
                     <h4>Special Financial Offers</h4>
                     <p class="font-thin">Our stress-free finance department that can find financial solution to
                         save you
                         money.</p>
                 </div>
-                <div>
+                <div data-aos="flip-left" data-aos-duration="2000">
                     <img src="assets/icons/dealership.png" alt="">
                     <h4>Trusted Car Dealership</h4>
                     <p class="font-thin">Our stress-free finance department that can find financial solution to save you
                         money.</p>
                 </div>
-                <div>
+                <div data-aos="flip-left" data-aos-duration="2000">
                     <img src="assets/icons/pricing.png" alt="">
                     <h4>Transparent Pricing</h4>
                     <p class="font-thin">Our stress-free finance department that can find financial solution to save you
                         money.</p>
                 </div>
-                <div>
+                <div data-aos="flip-left" data-aos-duration="2000">
                     <img src="assets/icons/service.png" alt="">
                     <h4>Expert Car Service</h4>
                     <p class="font-thin">Our stress-free finance department that can find financial solution to save you
@@ -483,168 +818,387 @@
         </section>
 
         <!-- SPECIALS SECTION -->
-        <section class="section-container">
+        <section class="section-container" data-aos="fade-left" data-aos-duration="2000">
             <div>
-                <h2 class="section-heading">Specials</h2>
-                <div class="car-gallery">
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-3.jpg" alt="" />
-                            <div class="card-badge">
-                                <span></span>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                <h2 class="section-heading mb-6">Specials</h2>
+                <div id="multicar" class="swiper relative">
+                    <div class="swiper-wrapper testimonial-container">
+                        <div class="car-card swiper-slide" data-aos="zoom-in" data-aos-duration="1200">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-3.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
                             </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
+                        </div>
+                        <div class="car-card swiper-slide" data-aos="zoom-in" data-aos-duration="1200">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-4.jpg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge">Great Price</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
+                        </div>
+                        <div class="car-card swiper-slide" data-aos="zoom-in" data-aos-duration="1200">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-5.jpeg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge-blue">Low Milage</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-card swiper-slide" data-aos="zoom-in" data-aos-duration="1200">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-6.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-card swiper-slide" data-aos="zoom-in" data-aos-duration="1200">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-7.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-4.jpg" alt="" />
-                            <div class="card-badge">
-                                <button class="badge">Great Price</button>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-                            </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
+                </div>
+                <div id="singlecar" class="swiper singlecar relative">
+                    <div class="swiper-wrapper testimonial-container">
+                        <div class="car-card swiper-slide" data-aos="zoom-in" data-aos-duration="1200">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-3.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
-                                </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-5.jpeg" alt="" />
-                            <div class="card-badge">
-                                <button class="badge-blue">Low Milage</button>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
-                            </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
-                                </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
-                                </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
-                                </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="car-card">
-                        <figure class="relative">
-                            <img class="fit" src="assets/card/card-6.jpg" alt="" />
-                            <div class="card-badge">
-                                <span></span>
-                                <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                        <div class="car-card swiper-slide" data-aos="zoom-in" data-aos-duration="1200">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-4.jpg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge">Great Price</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
                             </div>
-                        </figure>
-                        <div class="card-body p-6">
-                            <h3>Toyota Camry New</h3>
-                            <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
-                            <div class="card-actions">
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/speedometer.png" alt="">
-                                    <p class="text-sm">20 Miles</p>
+                        </div>
+                        <div class="car-card swiper-slide" data-aos="zoom-in" data-aos-duration="1200">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-5.jpeg" alt="" />
+                                <div class="card-badge">
+                                    <button class="badge-blue">Low Milage</button>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/petrol.png" alt="">
-                                    <p class="text-sm">Petrol</p>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
                                 </div>
-                                <div class="car-feature">
-                                    <img class="icon-width" src="assets/icons/gear.png" alt="">
-                                    <p class="text-sm">Automatic</p>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-price">
-                                <div>
-                                    <h2>$40,000</h2>
+                        </div>
+                        <div class="car-card swiper-slide" data-aos="zoom-in" data-aos-duration="1200">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-6.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
                                 </div>
-                                <div>
-                                    <button class="view-btn">View Details <i
-                                            class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-
+                        </div>
+                        <div class="car-card swiper-slide" data-aos="zoom-in" data-aos-duration="1200">
+                            <figure class="relative">
+                                <img class="fit" src="assets/card/card-7.jpg" alt="" />
+                                <div class="card-badge">
+                                    <span></span>
+                                    <button class="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+                                </div>
+                            </figure>
+                            <div class="card-body p-6">
+                                <h3>Toyota Camry New</h3>
+                                <p class="text-sm font-thin">3.5 D5 PowerPulse Momentum 5dr AW...</p>
+                                <div class="card-actions">
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/speedometer.png" alt="">
+                                        <p class="text-sm">20 Miles</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/petrol.png" alt="">
+                                        <p class="text-sm">Petrol</p>
+                                    </div>
+                                    <div class="car-feature">
+                                        <img class="icon-width" src="assets/icons/gear.png" alt="">
+                                        <p class="text-sm">Automatic</p>
+                                    </div>
+                                </div>
+                                <div class="card-price">
+                                    <div>
+                                        <h2>$40,000</h2>
+                                    </div>
+                                    <div>
+                                        <button class="view-btn">View Details <i
+                                                class="fa-thin fa-arrow-up-right text-2xl"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex">
-                <button style="margin-right: 24px" class="btn-arrow border"><i
+            <div class="mt-6">
+                <button style="margin-right: 24px" class="btn-arrow border next-car"><i
                         class="fa-solid fa-chevron-left"></i></button>
-                <button class="btn-arrow border"><i class="fa-solid fa-chevron-right"></i></button>
+                <button class="btn-arrow border prev-car"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </section>
 
         <!-- TESTIMONIALS SECTION -->
-        <section class="testimonial-section-container">
+        <section class="testimonial-section-container" data-aos="fade-up" data-aos-duration="2000">
             <div class="section-container relative">
                 <div class="testimonial-section-title">
                     <div>
@@ -901,7 +1455,7 @@
         </section>
 
         <!-- TEAM SECTION -->
-        <section class="section-container">
+        <section class="section-container" data-aos="fade-up" data-aos-duration="2000">
             <div class="team-container">
                 <div class="section-title">
                     <div>
@@ -911,30 +1465,30 @@
                         <button class="view-btn">View all <i class="fa-thin fa-arrow-up-right text-2xl"></i></button>
                     </div>
                 </div>
-                <div class="car-gallery">
-                    <div>
+                <div class="team-gallery team-img-container">
+                    <div data-aos="flip-left" data-aos-duration="2000">
                         <img class="team mb-3" src="assets/images/team-1.png" alt="">
                         <h4>Courtney Henry</h4>
                         <p class="text-sm font-thin">Development Manager</p>
                     </div>
-                    <div>
+                    <div data-aos="flip-left" data-aos-duration="2000">
                         <img class="team mb-3" src="assets/images/team-2.png" alt="">
                         <h4>Jerome Bell</h4>
                         <p class="text-sm font-thin">Software Tester</p>
                     </div>
-                    <div>
+                    <div data-aos="flip-left" data-aos-duration="2000">
                         <img class="team mb-3" src="assets/images/team-3.png" alt="">
                         <h4>Arlene McCoy</h4>
                         <p class="text-sm font-thin">Software Developer</p>
                     </div>
-                    <div>
+                    <div data-aos="flip-left" data-aos-duration="2000">
                         <img class="team mb-3" src="assets/images/team-4.png" alt="">
                         <h4>Jenny Willson</h4>
                         <p class="text-sm font-thin">UI/UX Designer</p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="2000">
                 <div>
                     <h2 class="section-heading">Need Some Inspiration?</h2>
                 </div>
@@ -949,8 +1503,8 @@
             </div>
         </section>
 
-        <!-- SECOND BANNER SECTION -->
-        <section class="app-section-container">
+        <!-- APP SECTION -->
+        <section class="app-section-container" data-aos="fade-up" data-aos-duration="2000">
             <div class="banner-2">
                 <div class="banner-2-content">
                     <div class="hero-content">
@@ -998,27 +1552,27 @@
             </div>
 
             <div class="car-type">
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="logo-container"><img class="brand-logo" src="assets/icons/Audi.png" alt=""></div>
                     <h4 class="brand">Audi</h4>
                 </div>
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="logo-container"><img class="brand-logo" src="assets/icons/BMW.png" alt=""></div>
                     <h4 class="brand">BMW</h4>
                 </div>
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="logo-container"><img class="brand-logo" src="assets/icons/Ford.svg" alt=""></div>
                     <h4 class="brand">Ford</h4>
                 </div>
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="logo-container"><img class="brand-logo" src="assets/icons/benz.png" alt=""></div>
                     <h4 class="brand">Mercedes Benz</h4>
                 </div>
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="logo-container"><img class="brand-logo" src="assets/icons/peugeot.svg" alt=""></div>
                     <h4 class="brand">Peugeot</h4>
                 </div>
-                <div class="category">
+                <div class="category" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="logo-container"><img class="brand-logo" src="assets/icons/Volkswagen.png" alt=""></div>
                     <h4 class="brand">Volkswagen</h4>
                 </div>
@@ -1125,6 +1679,7 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="scripts/swiper-bundle.min.js"></script>
 <script src="scripts/script.js"></script>
 

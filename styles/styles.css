@@ -39,6 +39,14 @@ body {
     margin: 0 auto;
 }
 
+.mb-6 {
+    margin-bottom: 24px;
+}
+
+.mt-6 {
+    margin-top: 24px;
+}
+
 .text-sm {
     font-size: 0.875rem;
 }
@@ -74,9 +82,14 @@ button {
     gap: 8px;
 }
 
+button:hover {
+    transform: scale(1.05);
+}
+
 button:active {
     transform: scale(0.95);
 }
+
 
 .relative {
     position: relative;
@@ -93,11 +106,20 @@ button:active {
     padding: 112px 0px;
 }
 
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
 /* ====================================== 
-                CUSTOM CSS
+                Other CSS
 ====================================== */
 /* HEADER SECTION */
 
+/* NAVBAR */
 /* NAVBAR */
 header .navigation {
     border-bottom: 1px solid #eeefef52;
@@ -125,6 +147,41 @@ header .navigation {
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Button Styles */
+.nav-btn {
+    background: transparent;
+    border: 1px solid white;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: white;
+}
+
+.navlinks li a:has(.nav-btn)::after {
+    display: none;
 }
 
 .logo {
@@ -143,13 +200,6 @@ nav ul li a {
     gap: 32px;
 }
 
-.nav-btn {
-    background: transparent;
-    border: 1px solid white;
-    padding: 12px 16px;
-    border-radius: 12px;
-    color: white;
-}
 
 /* banner */
 .banner-container {
@@ -288,9 +338,18 @@ nav ul li a {
     border-bottom: 1px solid #EDEDED;
 }
 
-.active-tab {
+.tabs button {
+    border: none;
+    background: transparent;
+}
+
+.tabs .active-tab {
     border-bottom: 2px solid #4663F2;
     padding: 16px 0;
+}
+
+.tab {
+    display: none;
 }
 
 .car-card {
@@ -356,6 +415,14 @@ nav ul li a {
     color: #4663F2;
 }
 
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 .car-gallery {
     display: grid;
     margin: 24px 0;
@@ -364,6 +431,7 @@ nav ul li a {
     overflow: hidden;
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+
 
 .car-gallery h4 {
     font-size: 20px;
@@ -406,14 +474,31 @@ nav ul li a {
 
 /* hero section */
 .section-container .hero-img {
+    position: relative;
     width: 50%;
     height: 600px;
     border-radius: 24px;
+    overflow: hidden;
+}
+
+.section-container .hero-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('../assets/images/maserati.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
 }
+
+.section-container .hero-img:hover::before {
+    transform: scale(1.05);
+}
+
 
 .hero-container {
     display: flex;
@@ -447,6 +532,20 @@ nav ul li a {
 
 .border {
     border: 2px solid #EEEFEF;
+}
+
+.why-us-gallery {
+    display: grid;
+    margin: 24px 0;
+    margin: 24px 0;
+    gap: 24px;
+    overflow: hidden;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* specials section */
+#singlecar {
+    display: none;
 }
 
 /* what out customers say section */
@@ -532,9 +631,22 @@ nav ul li a {
     margin-bottom: 112px;
 }
 
+.team-img-container {
+    padding: 16px;
+}
+
 .team-container h4 {
     font-weight: 400;
     font-size: 20px;
+}
+
+.team-gallery {
+    display: grid;
+    margin: 24px 0;
+    margin: 24px 0;
+    gap: 24px;
+    overflow: hidden;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .team {
@@ -544,7 +656,6 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     border-radius: 16px;
 }
 
@@ -886,6 +997,7 @@ nav ul li a {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
+
     /* hero section */
     .hero-container {
         flex-direction: column;
@@ -898,6 +1010,20 @@ nav ul li a {
     .section-container .hero-img {
         width: 100%;
         height: 300px;
+    }
+
+    /* why chose us */
+    .why-us-gallery {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    /* special car section */
+    #multicar {
+        display: none;
+    }
+
+    #singlecar {
+        display: block;
     }
 
     /* testimonial section */
@@ -924,6 +1050,10 @@ nav ul li a {
     /* team section */
     .team-container {
         margin-bottom: 38px;
+    }
+
+    .team-gallery {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
     /* inspiration section */
