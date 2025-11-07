@@ -1,5 +1,6 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
 
 
 /* ====================================== 
@@ -186,7 +187,12 @@ nav ul li a:hover::after {
 
 .logo {
     color: white;
-    font-size: 22px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .logo h1 {
