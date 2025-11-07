@@ -97,6 +97,10 @@ h6 {
 }
 
 .mt-4 {
+    margin-top: 24px;
+}
+
+.mt-12 {
     margin-top: 48px;
 }
 
@@ -182,22 +186,25 @@ h6 {
     background-repeat: no-repeat;
 }
 
-.border {
-    border: 1px solid white;
-}
-
-.btn {
+.btn-arrow {
     background-color: #ffffff;
     color: #000000;
-    padding: 0.5rem 1rem;
-    border-radius: 0.75rem;
+    padding: 12px 24px;
+    border-radius: 24px;
     border: none;
 }
 
-.btn-outline {
+.btn-primary {
     border: 1px solid #ffffff;
     color: #ffffff;
-    padding: 0.5rem 1rem;
+    padding: 16px 24px;
+    border-radius: 0.75rem;
+}
+
+.btn-secondary {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 16px 24px;
     border-radius: 0.75rem;
     background-color: transparent;
 }
@@ -262,6 +269,7 @@ nav ul li a {
 
 .btn-banner {
     padding: 16px 24px;
+    color: #000000;
 }
 
 .slider-btn {
@@ -328,7 +336,8 @@ nav ul li a {
 }
 
 .icon-width {
-    width: 20px;
+    width: 16px;
+    padding: 8px 0px;
 }
 
 .details-btn {
@@ -370,4 +379,69 @@ nav ul li a {
     border: none;
     padding: 8px 12px;
     border-radius: 30px;
+}
+
+/* hero section */
+.hero-img {
+    width: 50%;
+    height: 600px;
+    border-radius: 24px;
+    background-image: url('../assets/images/maserati.png');
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-btn {
+    padding: 16px 24px;
+    border: none;
+    color: white;
+    background-color: #000000;
+    margin-top: 24px;
+    border-radius: 12px;
+}
+
+/* why chose us section */
+
+.border {
+    border: 2px solid #EEEFEF;
+}
+
+/* what out customers say section */
+
+.rating {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.verified {
+    display: flex;
+    height: 20px;
+    justify-items: center;
+    gap: 8px;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.mb-3 {
+    margin-bottom: 12px;
+}
+
+.testimonial-btn {
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-sm {
+    padding: 8px 16px;
 }
