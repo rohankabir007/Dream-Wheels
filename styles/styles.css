@@ -31,126 +31,20 @@ body {
     font-optical-sizing: auto;
 }
 
-button {
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
 /* ====================================== 
-            Common CSS
+            Commonly used CSS
 ====================================== */
-/* Layout */
-.container-wide {
-    max-width: 90dvw;
-    margin: 0 auto;
-}
-
 .container {
     max-width: 75dvw;
     margin: 0 auto;
 }
 
-.flex {
-    display: flex;
-}
-
-.flex-col {
-    flex-direction: column;
-}
-
-.gap-2 {
-    gap: 0.5rem;
-}
-
-.gap-6 {
-    gap: 1.5rem;
-}
-
-.gap-12 {
-    gap: 3rem;
-}
-
-.justify-end {
-    justify-content: end;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.items-center {
-    align-items: center;
-}
-
-.pt-4 {
-    padding-top: 1rem;
-}
-
-.py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.py-28 {
-    padding: 7rem 0rem;
-}
-
-.my-6 {
-    margin: 52px 0px;
-}
-
-.mt-4 {
-    margin-top: 24px;
-}
-
-.mt-12 {
-    margin-top: 48px;
-}
-
-.mb-4 {
-    margin-bottom: 20px;
-}
-
-/* TYPOGRAPHY */
 .text-sm {
     font-size: 0.875rem;
 }
 
-.text-base {
-    font-size: 1rem;
-}
-
-.text-lg {
-    font-size: 1.125rem;
-}
-
-.text-xl {
-    font-size: 1.25rem;
-}
-
 .text-2xl {
     font-size: 1.5rem;
-}
-
-.text-3xl {
-    font-size: 1.875rem;
-}
-
-.text-4xl {
-    font-size: 2.25rem;
-}
-
-.text-7xl {
-    font-size: 4.5rem;
-}
-
-.text-white {
-    color: #ffffff;
 }
 
 .font-thin {
@@ -161,23 +55,6 @@ button {
     font-weight: 400;
 }
 
-.font-medium {
-    font-weight: 500;
-}
-
-/* display */
-
-.min-h-screen {
-    min-height: 100vh;
-}
-
-.bg-cover {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* miscellaneous */
 .btn-arrow {
     background-color: #ffffff;
     color: #000000;
@@ -186,19 +63,15 @@ button {
     border: none;
 }
 
-.btn-primary {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    padding: 16px 24px;
-    border-radius: 0.75rem;
+button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
-.btn-secondary {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    padding: 16px 24px;
-    border-radius: 0.75rem;
-    background-color: transparent;
+.view-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 button:active {
@@ -207,10 +80,6 @@ button:active {
 
 .relative {
     position: relative;
-}
-
-.absolute {
-    position: absolute;
 }
 
 .section-heading {
@@ -347,6 +216,7 @@ nav ul li a {
     align-items: center;
     gap: 8px;
     color: #ffffff;
+    margin-top: 48px;
     padding: 16px 24px;
     border-radius: 0.75rem;
     color: black;
@@ -411,12 +281,16 @@ nav ul li a {
     padding: 112px 0px;
 }
 
-.tab-border {
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 24px;
     border-bottom: 1px solid #EDEDED;
 }
 
 .active-tab {
     border-bottom: 2px solid #4663F2;
+    padding: 16px 0;
 }
 
 .car-card {
@@ -430,9 +304,34 @@ nav ul li a {
     padding: 12px 24px 24px 24px;
 }
 
+.card-body h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-body h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-details {
+    font-weight: 200;
+}
+
 .card-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    font-weight: 200;
     border-top: 2px solid #EEEFEF;
     border-bottom: 2px solid #EEEFEF;
+}
+
+.car-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .fit {
@@ -446,18 +345,35 @@ nav ul li a {
     padding: 8px 0px;
 }
 
-.details-btn {
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.card-price button {
     color: #4663F2;
 }
 
 .car-gallery {
     display: grid;
+    margin: 24px 0;
+    margin: 24px 0;
     gap: 24px;
     overflow: hidden;
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.car-gallery h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
 .card-badge {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 16px;
     position: absolute;
@@ -494,6 +410,9 @@ nav ul li a {
     height: 600px;
     border-radius: 24px;
     background-image: url('../assets/images/maserati.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-container {
@@ -507,7 +426,15 @@ nav ul li a {
     width: 50%;
 }
 
+.hero-content h3 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
 .hero-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     padding: 16px 24px;
     border: none;
     color: white;
@@ -537,6 +464,14 @@ nav ul li a {
 
 .testimonial-section-container .section-container .singlecard {
     display: none;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 12px
 }
 
 .rating {
@@ -581,6 +516,9 @@ nav ul li a {
 }
 
 .slider-btn-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
     top: 55%;
     width: 82dvw;
     left: 50%;
@@ -592,6 +530,11 @@ nav ul li a {
 /* team section */
 .team-container {
     margin-bottom: 112px;
+}
+
+.team-container h4 {
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .team {
@@ -639,7 +582,7 @@ nav ul li a {
 
 .hero-content .section-details {
     margin-top: 24px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
 }
 
@@ -654,6 +597,7 @@ nav ul li a {
 .mockup {
     width: 316px;
     right: 7dvw;
+    position: absolute;
     bottom: 0;
 }
 
@@ -784,6 +728,15 @@ nav ul li a {
 .footer-links button {
     border: none;
     background-color: transparent;
+}
+
+.footer-links-container h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.socials-heading {
+    padding: 16px 0;
 }
 
 .socials {
@@ -1008,6 +961,11 @@ nav ul li a {
     }
 
     /* footer section */
+    .footer-links-container h4 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
     .newsletter {
         max-width: 92dvw;
         padding: 32px 0px;
