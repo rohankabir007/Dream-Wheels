@@ -1,0 +1,184 @@
+/* ====================================== 
+                Universal CSS
+====================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ====================================== 
+            Basic template CSS
+====================================== */
+/* Layout */
+.container {
+    margin: 0 auto;
+    padding: 0 6rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-1 {
+    padding: 0.25rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.p-3 {
+    padding: 0.75rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.pr-4 {
+    padding-right: 1rem;
+}
+
+.p-5 {
+    padding: 1.25rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+/* TYPOGRAPHY */
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.text-5xl {
+    font-size: 3rem;
+}
+
+.text-6xl {
+    font-size: 3.75rem;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+/* display */
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.btn {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+}
+
+.btn-outline {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    background-color: transparent;
+}
+
+
+
+/* Font */
+body {
+    font-family: 'BR Hendrix', sans-serif;
+}
+
+
+/* ====================================== 
+                CUSTOM CSS
+====================================== */
+/* HEADER SECTION */
+
+.bg-header {
+    background-image: url('../assets/images/banner-1.png');
+    background-color: #00000050;
+    background-blend-mode: overlay;
+}
+
+/* NAVBAR */
+header section {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #aeaeae;
+}
+
+nav ul {
+    list-style: none;
+    gap: 24px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
