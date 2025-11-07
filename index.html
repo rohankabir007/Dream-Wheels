@@ -7,12 +7,25 @@
     <meta name="description" content="A brief description of the page's content for SEO purposes.">
     <meta name="author" content="Your Name">
     <title>Dream Wheels</title>
+
     <!-- Favicon -->
     <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+
     <!-- Normalize.css for CSS resets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
     <!-- External Fonts -->
     <link href="https://fonts.cdnfonts.com/css/br-hendrix" rel="stylesheet">
 </head>
@@ -20,18 +33,36 @@
 <body>
     <!-- Header -->
     <header class="bg-header bg-cover min-h-screen">
-        <section class="">
-            <nav class="container flex justify-between py-4">
-                <div class="text-4xl text-white">
-                    LOGO
+        <section class="navigation">
+            <nav class="container flex justify-between">
+                <div class="text-base text-white">
+                    <h1>LOGO</h1>
                 </div>
-                <ul class="flex items-center text-base">
+                <ul class="flex gap-6 items-center text-base">
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><button class="btn btn-outline"><a href="#submit-listing">Submit listing</a></button></li>
+                    <li><button class="btn-outline"><a href="#submit-listing">Submit listing</a></button></li>
                 </ul>
             </nav>
+        </section>
+        <section class="flex flex-col justify-center banner-content">
+            <div class="text-white ">
+                <p class="text-4xl">$35,000</p>
+                <h1 class="banner-heading text-7xl font-medium">Mercedes-Benz, C Class</h1>
+                <div class="flex gap-12 font-medium">
+                    <p>Petrol</p>
+                    <p>100 Miles</p>
+                    <p>Automatic</p>
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-banner">Learn More <i class="fa-thin fa-arrow-up-right"></i></button>
+                </div>
+            </div>
+            <div class="flex justify-between slider-btn">
+                <button class="btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
         </section>
     </header>
 

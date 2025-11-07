@@ -1,3 +1,7 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
 /* ====================================== 
                 Universal CSS
 ====================================== */
@@ -10,7 +14,6 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
 }
 
 /* ====================================== 
@@ -26,9 +29,22 @@ html {
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.gap-12 {
+    gap: 3rem;
+}
+
 .justify-center {
     justify-content: center;
 }
+
 
 .justify-between {
     justify-content: space-between;
@@ -77,6 +93,10 @@ html {
     padding: 1.5rem;
 }
 
+.mt-4 {
+    margin-top: 48px;
+}
+
 /* TYPOGRAPHY */
 .text-sm {
     font-size: 0.875rem;
@@ -114,8 +134,25 @@ html {
     font-size: 3.75rem;
 }
 
+.text-7xl {
+    font-size: 4.5rem;
+}
+
+
 .text-white {
     color: #ffffff;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
 }
 
 /* display */
@@ -130,12 +167,15 @@ html {
     background-repeat: no-repeat;
 }
 
+.border {
+    border: 1px solid white;
+}
 
 .btn {
     background-color: #ffffff;
-    color: #ffffff;
+    color: #000000;
     padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+    border-radius: 0.75rem;
     border: none;
 }
 
@@ -151,7 +191,8 @@ html {
 
 /* Font */
 body {
-    font-family: 'BR Hendrix', sans-serif;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 
 
@@ -167,7 +208,7 @@ body {
 }
 
 /* NAVBAR */
-header section {
+header .navigation {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #aeaeae;
@@ -175,10 +216,35 @@ header section {
 
 nav ul {
     list-style: none;
-    gap: 24px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
+}
+
+/* banner */
+.feature {
+    padding: 0.25rem 0.5rem;
+}
+
+.banner-content {
+    height: 90vh;
+    padding-left: 16rem;
+    position: relative;
+}
+
+.banner-heading {
+    margin: 0rem;
+    padding: 1rem 0rem;
+}
+
+.btn-banner {
+    padding: 16px 24px;
+}
+
+.slider-btn {
+    position: absolute;
+    width: 90%;
+    left: 90px;
 }
