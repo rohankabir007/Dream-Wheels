@@ -16,13 +16,28 @@ html {
     line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
 /* ====================================== 
             Basic template CSS
 ====================================== */
 /* Layout */
-.container {
+.container-wide {
     margin: 0 auto;
     padding: 0 6rem;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
 }
 
 .flex {
@@ -39,6 +54,10 @@ html {
 
 .gap-12 {
     gap: 3rem;
+}
+
+.justify-end {
+    justify-content: end;
 }
 
 .justify-center {
@@ -59,20 +78,8 @@ html {
     margin-right: auto;
 }
 
-.p-1 {
-    padding: 0.25rem;
-}
-
-.p-2 {
-    padding: 0.5rem;
-}
-
-.p-3 {
-    padding: 0.75rem;
-}
-
-.p-4 {
-    padding: 1rem;
+.pt-4 {
+    padding-top: 1rem;
 }
 
 .py-4 {
@@ -81,20 +88,20 @@ html {
 
 }
 
-.pr-4 {
-    padding-right: 1rem;
+.py-28 {
+    padding: 7rem 0rem;
 }
 
-.p-5 {
-    padding: 1.25rem;
-}
-
-.p-6 {
-    padding: 1.5rem;
+.my-6 {
+    margin: 52px 0px;
 }
 
 .mt-4 {
     margin-top: 48px;
+}
+
+.mb-4 {
+    margin-bottom: 20px;
 }
 
 /* TYPOGRAPHY */
@@ -143,6 +150,14 @@ html {
     color: #ffffff;
 }
 
+.font-thin {
+    font-weight: 200;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
 .font-medium {
     font-weight: 500;
 }
@@ -187,7 +202,15 @@ html {
     background-color: transparent;
 }
 
+/* position */
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
 
 /* Font */
 body {
@@ -230,8 +253,6 @@ nav ul li a {
 
 .banner-content {
     height: 90vh;
-    padding-left: 16rem;
-    position: relative;
 }
 
 .banner-heading {
@@ -244,7 +265,109 @@ nav ul li a {
 }
 
 .slider-btn {
+    top: 45vh;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Browse by Type Section */
+
+.type-icon-bg {
+    background-color: #FAFBFD;
+    padding: 20px 24px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.category {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #EDEDED;
+    border-radius: 20px;
+}
+
+.view-btn {
+    background-color: transparent;
+    border: none;
+}
+
+/* Explore all vehicles section */
+.section-bg {
+    background-color: #FAFBFD;
+}
+
+.tab-border {
+    border-bottom: 1px solid #EDEDED;
+}
+
+.active-tab {
+    border-bottom: 2px solid #4663F2;
+}
+
+.car-card {
+    border: 2px solid #EEEFEF;
+    border-radius: 18px;
+    width: auto;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 12px 24px 24px 24px;
+}
+
+.card-actions {
+    border-top: 2px solid #EEEFEF;
+    border-bottom: 2px solid #EEEFEF;
+}
+
+.fit {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.icon-width {
+    width: 20px;
+}
+
+.details-btn {
+    color: #4663F2;
+}
+
+.car-gallery {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.card-badge {
+    width: 100%;
+    padding: 16px;
     position: absolute;
-    width: 90%;
-    left: 90px;
+    top: 0;
+}
+
+.badge {
+    background-color: #3E923A;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 30px;
+}
+
+.badge-blue {
+    background-color: #4663F2;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 30px;
+}
+
+.bookmark {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 30px;
 }
