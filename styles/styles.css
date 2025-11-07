@@ -31,12 +31,12 @@ h6 {
 ====================================== */
 /* Layout */
 .container-wide {
+    max-width: 90vw;
     margin: 0 auto;
-    padding: 0 6rem;
 }
 
 .container {
-    max-width: 1360px;
+    max-width: 75vw;
     margin: 0 auto;
 }
 
@@ -46,6 +46,10 @@ h6 {
 
 .flex-col {
     flex-direction: column;
+}
+
+.gap-2 {
+    gap: 0.5rem;
 }
 
 .gap-6 {
@@ -444,4 +448,131 @@ nav ul li a {
 
 .btn-sm {
     padding: 8px 16px;
+}
+
+/* team section */
+
+.team {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.btn-outline {
+    border: 2px solid #EEEFEF;
+    padding: 16px 24px;
+    border-radius: 12px;
+    background: transparent;
+    margin-right: 24px;
+}
+
+/* second banner section */
+.banner-2 {
+    background-color: #EEF0FC;
+    border-radius: 16px;
+}
+
+.fa-brands {
+    border-right: 1px solid white;
+    padding-right: 24px;
+}
+
+.store {
+    text-align: left;
+}
+
+.mockup {
+    width: 316px;
+    bottom: -111px;
+    right: 0px;
+}
+
+/* premium brands section*/
+.brand-logo {
+    width: 150px;
+    height: auto;
+    padding: 24px;
+}
+
+.logo-container {
+    width: 150px;
+    height: 150px;
+}
+
+/* call to action section */
+
+.cta-section {
+    padding-top: 7rem;
+}
+
+.call-to-action {
+    height: 65vh;
+    background-image: url('../assets/images/call-to-action.jpg');
+    background-color: #00000050;
+    background-blend-mode: overlay;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cta {
+    padding: 18px 84px;
+    border: 2px solid #EEEFEF;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+.cta-content {
+    color: white;
+    height: 100%;
+}
+
+/* footer section */
+.mail-input {
+    padding: 24px;
+    width: 25vw;
+    border: 2px solid #EEEFEF;
+    border-radius: 16px;
+}
+
+.btn-email {
+    padding: 16px 28px;
+    border: none;
+    color: white;
+    background-color: #000000;
+    border-radius: 12px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+
+.newsletter {
+    padding: 64px 0px;
+    border-bottom: 2px solid #EEEFEF;
+}
+
+.footer-links {
+    padding: 48px 0px;
+}
+
+.footer-links li {
+    list-style: none;
+    line-height: 40px;
+    font-weight: 200;
+}
+
+.footer-links button {
+    border: none;
+    background-color: transparent;
+}
+
+.copyright {
+    padding: 38px 0px;
+    border-top: 2px solid #EEEFEF;
+    font-weight: 200;
 }
